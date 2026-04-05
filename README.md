@@ -67,12 +67,7 @@ We have included a dataset table for easy updating and reference.
 | HRI | LoveDA | 5987 × 1024 × 1024 × 3 | 0.3 | 7 | 536.15 | 12B | SemanticSeg | 2021 |
 | HRI | FloodNet | 2343 × 4000 × 3000 × 3 | 0.015 | 9 | 6.3 | 28B | SemanticSeg | 2021 |
 
-
-
-
-### Future direction 
-We summarized some poential and promsing directions for future study.
-
+**Summary of multimodal RS datasets used for SS, where ReferringSeg and ReasoningSeg are abbreviations of referring segmentation and reasoning segmentation, respectively**
 | Datasets | Type | Image size | GSD(m) | Classes | Area (km²) | Labels | Task | Year |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Trento | HSI | 1 × 166 × 600 × 63 | 1 | 6 | 0.1 | 30,414 | Classification | 2007 |
@@ -124,5 +119,10 @@ We summarized some poential and promsing directions for future study.
 | RRSIS-D | RGB | 17402 × 800 × 800 × 3 | 0.5-30 | 20 | - | - | ReferringSeg | 2024 |
 | RISBench | Text | 52472 | 0.1-30 | 26 | - | - | ReferringSeg | 2025 |
 | RISBench | RGB | 52472 × 512 × 512 × 3 | 0.1-30 | 26 | - | - | ReferringSeg | 2025 |
+
+
+### Future direction 
+We summarized some poential and promsing directions for future study.
+
 | EarthReason | Text | 5434 | 0.5-153 | 28 | - | - | ReasoningSeg | 2025 |
 | EarthReason | RGB | 5434 × Variable × 3 | 0.5-153 | 28 | - | - | ReasoningSeg | 2025 |
