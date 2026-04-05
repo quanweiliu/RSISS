@@ -13,11 +13,11 @@ We hople this reposity has a little promotes to the remote sensing communities p
 
 
 ## The patch-based classification repository
-- refer to: https://github.com/quanweiliu/TilewiseSegFra
+- Refer to: https://github.com/quanweiliu/TilewiseSegFra
 
 
 ## The tile-based segmentation repository
-- refer to: https://github.com/quanweiliu/PatchwiseClsFra
+- Refer to: https://github.com/quanweiliu/PatchwiseClsFra
 
 
 ## Other useful materials
