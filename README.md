@@ -119,10 +119,14 @@ We have included a dataset table for easy updating and reference.
 | RRSIS-D | RGB | 17402 × 800 × 800 × 3 | 0.5-30 | 20 | - | - | ReferringSeg | 2024 |
 | RISBench | Text | 52472 | 0.1-30 | 26 | - | - | ReferringSeg | 2025 |
 | RISBench | RGB | 52472 × 512 × 512 × 3 | 0.1-30 | 26 | - | - | ReferringSeg | 2025 |
-
+| EarthReason | Text | 5434 | 0.5-153 | 28 | - | - | ReasoningSeg | 2025 |
+| EarthReason | RGB | 5434 × Variable × 3 | 0.5-153 | 28 | - | - | ReasoningSeg | 2025 |
 
 ### Future direction 
 We summarized some poential and promsing directions for future study.
 
-| EarthReason | Text | 5434 | 0.5-153 | 28 | - | - | ReasoningSeg | 2025 |
-| EarthReason | RGB | 5434 × Variable × 3 | 0.5-153 | 28 | - | - | ReasoningSeg | 2025 |
+| Future developments | Description | Explanation |
+| :--- | :--- | :--- | 
+|DATA |      |
+|MODEL |      |
+|LEARNING STRATEGIES |      |
