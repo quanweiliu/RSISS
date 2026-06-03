@@ -11,18 +11,38 @@ We hople this reposity has a little promotes to the remote sensing communities p
 ![Framework Image](framework.png)
 
 
+## Experiments
 
-## The patch-based classification repository
+To ensure a fair and rigorous quantitative comparison across all evaluated deep learning models, we established a standardized experimental environment and utilized a highly representative multimodal remote sensing benchmark dataset, complementing the macro-level qualitative analysis presented in our survey paper.
+
+### Dataset Specifications
+
+The empirical evaluations compiled in this repository were conducted on the Multimodal Oil Spill Dataset, commonly referred to as MOSD. This dataset was collected from the Gulf of Mexico, a region spanning parts of the United States, Mexico, and Cuba, located near 25 degrees North and 90 degrees West. The data captures the aftermath of the major environmental disaster on April 20, 2010, where over 780,000 cubic meters of crude oil were released into the ocean. 
+
+The dataset contains 18 paired multimodal scenes with an average image dimension of 1502 by 594 pixels, consisting of two perfectly coregistered modalities:
+* **Hyperspectral Imagery:** Acquired by the Airborne Visible and Infrared Imaging Spectrometer, capturing spectral information from 365 to 2500 nanometers across 224 original bands. Following common preprocessing practices, 31 noisy bands were removed, resulting in 193 highly usable spectral bands.
+* **Synthetic Aperture Radar:** Simulated based on RADARSAT 2 observations from the Canadian Space Agency and rigorously resampled to match the exact spatial resolution of the hyperspectral data, forming a paired HSI and SAR multimodal dataset.
+
+Ground truth reference maps were manually annotated using ENVI software following established rigorous annotation guidelines.
+
+#### 1.Training and Evaluation Protocols
+
+To support both patch based and tile based experimental evaluations, the data were preprocessed using distinct strategies tailored to the operational requirements of each segmentation paradigm.
+
+#### 2.Protocols for Models at the Patch Level
+For patch based approaches, images were extracted pixel by pixel following prior studies. To rigorously address class imbalance during model optimization, 1000 random samples were selected from each minority class in area 1, while 2000 samples were explicitly allocated for the majority water class.
+
+#### 3.Protocols for Models at the Tile Level
+For tile based architectures, the paired scene data were systematically cropped into fixed size tiles of 128 by 128 pixels utilizing a sliding window stride of 64 pixels. The entire MOSD dataset was then split into training, validation, and test sets following a three to one to two ratio. This exact partitioning yielded 1981 training subimages, 647 validation subimages, and 1201 test subimages. For this paradigm, the full partitioned dataset was utilized for training and testing without any further sampling.
+
+#### 4.Hardware Environment
+All representative models were implemented, trained, and tested under a unified computing environment to eliminate systemic hardware variations. The experiments were accelerated using an NVIDIA GeForce RTX 3090 graphics processing unit with 24 gigabytes of video memory, deployed on the PyTorch deep learning framework.
+
+
+### The patch-based classification repository
 - Refer to: https://github.com/quanweiliu/TilewiseSegFra
 
-### Experimental results
-
-
-# Quantitative Performance Benchmarks for RSISS
-
-This repository contains the detailed quantitative evaluation results for representative remote sensing image semantic segmentation (RSISS) models, complementing the macro-level qualitative analysis presented in our survey paper.
-
-## 1. Accuracy Benchmarks
+#### 1. Accuracy Benchmarks
 
 The following table summarizes the quantitative accuracy metrics (Precision, Recall, F1, Kappa, mIoU) for both Patch-based and Tile-based segmentation models.
 
@@ -59,11 +79,9 @@ The following table summarizes the quantitative accuracy metrics (Precision, Rec
 | | SHNet | 98.49 | 97.11 | 98.42 | 86.85 | 97.80 | 91.51 | 83.04 | 85.27 |
 | | MS2CANet | 98.22 | 97.65 | 98.19 | 85.30 | 97.93 | 90.52 | 81.06 | 83.80 |
 | | Cross-HL | 98.54 | 95.27 | 98.39 | 86.94 | 96.90 | 91.24 | 82.50 | 84.88 |
-
-
 ---
 
-## 2. Computational Complexity & Efficiency Benchmarks
+#### 2. Computational Complexity & Efficiency Benchmarks
 
 The following table details the computational cost (FLOPs), exact parameter counts, and processing speeds (Training time / Test time) to help developers gauge hardware requirements.
 
@@ -100,13 +118,23 @@ The following table details the computational cost (FLOPs), exact parameter coun
 | | SHNet | 56.86 | 399.78 | 13.16M | 4.07M |
 | | MS2CANet | 112.42 | 728.75 | 39.04M | 781.93K |
 | | Cross-HL | 242.02 | 937.53 | 131.75M | 548.58K |
+---
 
 
-## The tile-based segmentation repository
+<!-- ### Qualititive Performance Benchmarks for RSISS -->
+
+
+### The tile-based segmentation repository
 - Refer to: https://github.com/quanweiliu/PatchwiseClsFra
 
 
 ### Experimental results
+
+
+#### 1. Accuracy Benchmarks
+
+The following table summarizes the quantitative accuracy metrics (Precision, Recall, F1, Kappa, mIoU) for both Patch-based and Tile-based segmentation models.
+
 
 | Category | Model | Water | Oil | Accuracy | Precision | Recall | F1 | Kappa | mIoU |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -147,10 +175,9 @@ The following table details the computational cost (FLOPs), exact parameter coun
 | | HAFNetE | 99.77 | 93.90 | 99.45 | 97.72 | 96.83 | 97.27 | 94.54 | 94.80 |
 | | AsymFormer | 99.39 | 91.56 | 98.98 | 94.35 | 95.47 | 94.90 | 89.81 | 90.66 |
 | | DE_CCFNet | 99.74 | 95.48 | 99.51 | 97.55 | 97.61 | 97.58 | 95.16 | 95.36 |
-
 ---
 
-## 2. Computational Complexity & Efficiency Benchmarks
+#### 2. Computational Complexity & Efficiency Benchmarks
 
 The following table details the computational cost (FLOPs), exact parameter counts, and processing speeds (Training time / Test time) to help developers gauge hardware requirements.
 
@@ -193,8 +220,10 @@ The following table details the computational cost (FLOPs), exact parameter coun
 | | HAFNetE | 4977.47 | 50.62 | 3.80G | 6.98M |
 | | AsymFormer | 3291.95 | 27.43 | 4.43G | 33.32M |
 | | DE_CCFNet | 3205.94 | 27.02 | 8.70G | 54.56M |
-## Other useful materials
+---
 
+
+## Other useful materials
 
 ### Datasets
 We have included a dataset table for easy updating and reference.
