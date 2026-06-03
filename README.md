@@ -128,9 +128,6 @@ The following table details the computational cost (FLOPs), exact parameter coun
 - Refer to: https://github.com/quanweiliu/PatchwiseClsFra
 
 
-### Experimental results
-
-
 #### 1. Accuracy Benchmarks
 
 The following table summarizes the quantitative accuracy metrics (Precision, Recall, F1, Kappa, mIoU) for both Patch-based and Tile-based segmentation models.
