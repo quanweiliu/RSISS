@@ -87,7 +87,7 @@ The following table details the computational cost (FLOPs), exact parameter coun
 
 | Category | Model | Training time (s) | Test time (s) | FLOPs | Parameters |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Patch-based Unimodal HSI** | SSRN | 873.71 | 1706.49 | 185.33M | 354.60K |
+| **Patch-based Unimodal HSI** | [SSRN](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Spectral%E2%80%93spatial+residual+network+for+hyperspectral+image+classification&btnG=) | 873.71 | 1706.49 | 185.33M | 354.60K |
 | | BASSNet | 30.76 | 230.27 | 254.11K | 15.33K |
 | | FDSSC | 9756.06 | 5154.94 | 674.52M | 2.31M |
 | | DFFN | 441.68 | 1465.10 | 481.25M | 431.57K |
