@@ -60,7 +60,7 @@ The following table summarizes the quantitative accuracy metrics (Precision, Rec
 | | [MAVHN](https://www.sciencedirect.com/science/article/pii/S0957417423015348) | 83.26 | 92.56 | 83.64 | 60.82 | 87.91 | 62.75 | 29.95 | 52.33 |
 | | [VIT-DGCN](https://www.sciencedirect.com/science/article/pii/S1569843224001341) | 92.38 | 88.36 | 92.16 | 66.55 | 90.37 | 72.21 | 45.31 | 62.01 |
 | | [KnowCL](https://arxiv.org/abs/2404.01673) | 94.84 | 76.54 | 94.05 | 69.36 | 85.69 | 74.23 | 48.88 | 64.44 |
-| **Patch-based Unimodal SAR** | BASSNet | 97.92 | 93.49 | 97.73 | 82.98 | 95.71 | 88.13 | 76.30 | 80.46 |
+| **Patch-based Unimodal SAR** | [BASSNet](https://ieeexplore.ieee.org/abstract/document/7938656) | 97.92 | 93.49 | 97.73 | 82.98 | 95.71 | 88.13 | 76.30 | 80.46 |
 | | [DFFN](https://ieeexplore.ieee.org/abstract/document/8283837) | 95.73 | 97.36 | 95.81 | 75.04 | 96.54 | 81.99 | 64.21 | 72.57 |
 | | [DHCNet](https://ieeexplore.ieee.org/abstract/document/8361481) | 98.06 | 97.28 | 98.03 | 84.43 | 97.67 | 89.83 | 79.69 | 82.80 |
 | | [MDL](https://ieeexplore.ieee.org/abstract/document/9174822) | 98.21 | 97.94 | 98.19 | 85.27 | 98.07 | 90.55 | 81.14 | 83.86 |
@@ -71,14 +71,14 @@ The following table summarizes the quantitative accuracy metrics (Precision, Rec
 | | [VIT-DGCN](https://www.sciencedirect.com/science/article/pii/S1569843224001341) | 98.39 | 96.17 | 98.30 | 86.21 | 97.28 | 90.92 | 81.85 | 84.39 |
 | | [KnowCL](https://arxiv.org/abs/2404.01673) | 97.82 | 98.07 | 97.83 | 82.74 | 97.95 | 88.72 | 77.48 | 81.24 |
 | **Patch-based Multimodal (HSI-SAR)** | MDL-M | 98.31 | 96.97 | 98.24 | 85.77 | 97.64 | 90.73 | 81.47 | 84.10 |
-| | MDL-L | 98.27 | 97.39 | 98.22 | 85.50 | 97.83 | 90.62 | 81.26 | 83.95 |
-| | MDL-ED | 97.98 | 98.49 | 98.00 | 84.09 | 98.23 | 89.77 | 79.58 | 82.71 |
-| | FustNet | 97.97 | 97.22 | 97.93 | 83.84 | 97.59 | 89.38 | 78.80 | 82.16 |
-| | HCTNet | 98.00 | 65.39 | 96.57 | 78.57 | 81.69 | 79.88 | 59.77 | 70.48 |
-| | S2Net | 98.38 | 95.61 | 98.24 | 85.93 | 96.99 | 90.59 | 81.19 | 83.90 |
-| | SHNet | 98.49 | 97.11 | 98.42 | 86.85 | 97.80 | 91.51 | 83.04 | 85.27 |
-| | MS2CANet | 98.22 | 97.65 | 98.19 | 85.30 | 97.93 | 90.52 | 81.06 | 83.80 |
-| | Cross-HL | 98.54 | 95.27 | 98.39 | 86.94 | 96.90 | 91.24 | 82.50 | 84.88 |
+| | [MDL-L](https://ieeexplore.ieee.org/abstract/document/9174822) | 98.27 | 97.39 | 98.22 | 85.50 | 97.83 | 90.62 | 81.26 | 83.95 |
+| | [MDL-ED](https://ieeexplore.ieee.org/abstract/document/9174822) | 97.98 | 98.49 | 98.00 | 84.09 | 98.23 | 89.77 | 79.58 | 82.71 |
+| | [FustNet](https://openaccess.thecvf.com/content_CVPRW_2020/html/w6/Mohla_FusAtNet_Dual_Attention_Based_SpectroSpatial_Multimodal_Fusion_Network_for_Hyperspectral_CVPRW_2020_paper.html) | 97.97 | 97.22 | 97.93 | 83.84 | 97.59 | 89.38 | 78.80 | 82.16 |
+| | [HCTNet](https://ieeexplore.ieee.org/abstract/document/9999457) | 98.00 | 65.39 | 96.57 | 78.57 | 81.69 | 79.88 | 59.77 | 70.48 |
+| | [S2Net](https://ieeexplore.ieee.org/abstract/document/9583936) | 98.38 | 95.61 | 98.24 | 85.93 | 96.99 | 90.59 | 81.19 | 83.90 |
+| | [SHNet](https://www.sciencedirect.com/science/article/pii/S2352938525001545) | 98.49 | 97.11 | 98.42 | 86.85 | 97.80 | 91.51 | 83.04 | 85.27 |
+| | [MS2CANet](https://ieeexplore.ieee.org/abstract/document/10382694) | 98.22 | 97.65 | 98.19 | 85.30 | 97.93 | 90.52 | 81.06 | 83.80 |
+| | [Cross-HL](https://ieeexplore.ieee.org/abstract/document/10462184) | 98.54 | 95.27 | 98.39 | 86.94 | 96.90 | 91.24 | 82.50 | 84.88 |
 ---
 
 #### 2. Computational Complexity & Efficiency Benchmarks
