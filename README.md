@@ -70,7 +70,7 @@ The following table summarizes the quantitative accuracy metrics (Precision, Rec
 | | [MAVHN](https://www.sciencedirect.com/science/article/pii/S0957417423015348) | 98.41 | 97.51 | 98.38 | 86.51 | 97.96 | 91.36 | 82.74 | 85.06 |
 | | [VIT-DGCN](https://www.sciencedirect.com/science/article/pii/S1569843224001341) | 98.39 | 96.17 | 98.30 | 86.21 | 97.28 | 90.92 | 81.85 | 84.39 |
 | | [KnowCL](https://arxiv.org/abs/2404.01673) | 97.82 | 98.07 | 97.83 | 82.74 | 97.95 | 88.72 | 77.48 | 81.24 |
-| **Patch-based Multimodal (HSI-SAR)** | MDL-M(https://ieeexplore.ieee.org/abstract/document/9174822) | 98.31 | 96.97 | 98.24 | 85.77 | 97.64 | 90.73 | 81.47 | 84.10 |
+| **Patch-based Multimodal (HSI-SAR)** | [MDL-M](https://ieeexplore.ieee.org/abstract/document/9174822) | 98.31 | 96.97 | 98.24 | 85.77 | 97.64 | 90.73 | 81.47 | 84.10 |
 | | [MDL-L](https://ieeexplore.ieee.org/abstract/document/9174822) | 98.27 | 97.39 | 98.22 | 85.50 | 97.83 | 90.62 | 81.26 | 83.95 |
 | | [MDL-ED](https://ieeexplore.ieee.org/abstract/document/9174822) | 97.98 | 98.49 | 98.00 | 84.09 | 98.23 | 89.77 | 79.58 | 82.71 |
 | | [FustNet](https://openaccess.thecvf.com/content_CVPRW_2020/html/w6/Mohla_FusAtNet_Dual_Attention_Based_SpectroSpatial_Multimodal_Fusion_Network_for_Hyperspectral_CVPRW_2020_paper.html) | 97.97 | 97.22 | 97.93 | 83.84 | 97.59 | 89.38 | 78.80 | 82.16 |
@@ -148,7 +148,7 @@ The following table summarizes the quantitative accuracy metrics (Precision, Rec
 | | [DCSwin](https://ieeexplore.ieee.org/document/9681903) | 98.47 | 61.99 | 96.18 | 80.23 | 85.31 | 82.54 | 65.10 | 73.26 |
 | | [AMSUnet](https://www.sciencedirect.com/science/article/pii/S0010482523005851) | 98.57 | 67.41 | 96.73 | 82.99 | 86.35 | 84.57 | 69.15 | 75.74 |
 | | [ABCNet](https://www.sciencedirect.com/science/article/pii/S0924271621002379) | 98.29 | 63.38 | 96.24 | 80.84 | 83.78 | 82.23 | 64.47 | 72.93 |
-| | MambaUnet | 98.13 | 69.44 | 96.66 | 83.78 | 82.55 | 83.15 | 66.31 | 74.07 |
+| | [MambaUnet](https://arxiv.org/abs/2402.05079) | 98.13 | 69.44 | 96.66 | 83.78 | 82.55 | 83.15 | 66.31 | 74.07 |
 | **Tile-based Unimodal SAR** | [Unet](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28) | 99.63 | 94.84 | 99.38 | 97.23 | 96.57 | 96.90 | 93.79 | 94.12 |
 | | [Unet++](https://link.springer.com/chapter/10.1007/978-3-030-00889-5_1) | 99.63 | 94.72 | 99.37 | 97.18 | 96.58 | 96.87 | 93.75 | 94.08 |
 | | [DeepLabV3](https://arxiv.org/abs/1412.7062) | 98.99 | 82.55 | 98.12 | 90.77 | 90.56 | 90.67 | 81.33 | 84.00 |
@@ -162,9 +162,9 @@ The following table summarizes the quantitative accuracy metrics (Precision, Rec
 | | [DCSwin](https://ieeexplore.ieee.org/document/9681903) | 99.42 | 83.38 | 98.50 | 91.40 | 94.40 | 92.84 | 85.68 | 87.30 |
 | | [AMSUnet](https://www.sciencedirect.com/science/article/pii/S0010482523005851) | 99.67 | 95.02 | 99.43 | 97.35 | 96.94 | 97.14 | 94.28 | 94.56 |
 | | [ABCNet](https://www.sciencedirect.com/science/article/pii/S0924271621002379) | 99.64 | 90.89 | 99.16 | 95.27 | 96.54 | 95.89 | 91.78 | 92.35 |
-| | MambaUnet | 99.53 | 88.70 | 98.93 | 94.11 | 95.47 | 94.78 | 89.55 | 90.45 |
+| | [MambaUnet](https://arxiv.org/abs/2402.05079) | 99.53 | 88.70 | 98.93 | 94.11 | 95.47 | 94.78 | 89.55 | 90.45 |
 | **Tile-based Multimodal (HSI-SAR)** | [ACNet](https://ieeexplore.ieee.org/abstract/document/8803025) | 99.77 | 95.34 | 99.53 | 97.80 | 97.55 | 97.67 | 95.35 | 95.54 |
-| | [CMGF](https://www.sciencedirect.com/science/article/pii/S0924271621003294 | 99.76 | 93.64 | 99.44 | 97.67 | 96.70 | 97.18 | 94.36 | 94.63 |
+| | [CMGF](https://www.sciencedirect.com/science/article/pii/S0924271621003294) | 99.76 | 93.64 | 99.44 | 97.67 | 96.70 | 97.18 | 94.36 | 94.63 |
 | | [CMANet](https://www.mdpi.com/1424-8220/22/21/8520) | 99.79 | 95.33 | 99.55 | 98.00 | 97.56 | 97.78 | 95.55 | 95.73 |
 | | [CANet](https://www.sciencedirect.com/science/article/pii/S0031320321006440) | 99.81 | 93.90 | 99.50 | 98.11 | 96.86 | 97.47 | 94.95 | 95.17 |
 | | [SFAFMA](https://ieeexplore.ieee.org/abstract/document/10103760) | 99.78 | 92.74 | 99.41 | 97.82 | 96.26 | 97.03 | 94.05 | 94.36 |
