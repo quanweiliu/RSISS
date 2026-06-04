@@ -48,28 +48,28 @@ The following table summarizes the quantitative accuracy metrics (Precision, Rec
 
 | Category | Model | Water | Oil | Accuracy | Precision | Recall | F1 | Kappa | mIoU |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Patch-based Unimodal HSI** | SSRN | 89.02 | 89.88 | 89.03 | 64.21 | 89.45 | 68.62 | 39.26 | 58.40 |
-| | BASSNet | 78.82 | 93.21 | 79.41 | 58.37 | 86.01 | 58.33 | 23.20 | 47.75 |
-| | FDSSC | 87.00 | 90.19 | 87.10 | 61.67 | 88.60 | 65.22 | 33.11 | 54.92 |
-| | DFFN | 97.92 | 34.88 | 95.23 | 70.58 | 66.40 | 67.88 | 35.83 | 59.42 |
-| | DHCNet | 89.73 | 57.15 | 88.29 | 60.28 | 73.45 | 62.82 | 27.37 | 53.97 |
-| | MDL | 89.34 | 91.52 | 89.40 | 63.69 | 90.43 | 68.39 | 38.59 | 58.06 |
-| | SPRN | 77.95 | 86.21 | 78.22 | 56.95 | 82.08 | 56.15 | 19.24 | 45.88 |
-| | SSFTTNet | 97.21 | 35.75 | 94.56 | 66.63 | 66.48 | 66.42 | 32.86 | 58.11 |
-| | FDGC | 90.68 | 90.02 | 90.61 | 65.10 | 90.35 | 70.24 | 41.90 | 59.99 |
-| | MAVHN | 83.26 | 92.56 | 83.64 | 60.82 | 87.91 | 62.75 | 29.95 | 52.33 |
-| | VIT-DGCN | 92.38 | 88.36 | 92.16 | 66.55 | 90.37 | 72.21 | 45.31 | 62.01 |
-| | KnowCL | 94.84 | 76.54 | 94.05 | 69.36 | 85.69 | 74.23 | 48.88 | 64.44 |
+| **Patch-based Unimodal HSI** | [SSRN](https://ieeexplore.ieee.org/abstract/document/8061020) | 89.02 | 89.88 | 89.03 | 64.21 | 89.45 | 68.62 | 39.26 | 58.40 |
+| | [BASSNet](https://ieeexplore.ieee.org/abstract/document/7938656) | 78.82 | 93.21 | 79.41 | 58.37 | 86.01 | 58.33 | 23.20 | 47.75 |
+| | [FDSSC](https://www.mdpi.com/2072-4292/10/7/1068) | 87.00 | 90.19 | 87.10 | 61.67 | 88.60 | 65.22 | 33.11 | 54.92 |
+| | [DFFN](https://ieeexplore.ieee.org/abstract/document/8283837) | 97.92 | 34.88 | 95.23 | 70.58 | 66.40 | 67.88 | 35.83 | 59.42 |
+| | [DHCNet](https://ieeexplore.ieee.org/abstract/document/8361481) | 89.73 | 57.15 | 88.29 | 60.28 | 73.45 | 62.82 | 27.37 | 53.97 |
+| | [MDL](https://ieeexplore.ieee.org/abstract/document/9174822) | 89.34 | 91.52 | 89.40 | 63.69 | 90.43 | 68.39 | 38.59 | 58.06 |
+| | [SPRN](https://ieeexplore.ieee.org/abstract/document/9454961) | 77.95 | 86.21 | 78.22 | 56.95 | 82.08 | 56.15 | 19.24 | 45.88 |
+| | [SSFTTNet](https://ieeexplore.ieee.org/abstract/document/9684381) | 97.21 | 35.75 | 94.56 | 66.63 | 66.48 | 66.42 | 32.86 | 58.11 |
+| | [FDGC](https://ieeexplore.ieee.org/abstract/document/9785802) | 90.68 | 90.02 | 90.61 | 65.10 | 90.35 | 70.24 | 41.90 | 59.99 |
+| | [MAVHN](https://www.sciencedirect.com/science/article/pii/S0957417423015348) | 83.26 | 92.56 | 83.64 | 60.82 | 87.91 | 62.75 | 29.95 | 52.33 |
+| | [VIT-DGCN](https://www.sciencedirect.com/science/article/pii/S1569843224001341) | 92.38 | 88.36 | 92.16 | 66.55 | 90.37 | 72.21 | 45.31 | 62.01 |
+| | [KnowCL](https://arxiv.org/abs/2404.01673) | 94.84 | 76.54 | 94.05 | 69.36 | 85.69 | 74.23 | 48.88 | 64.44 |
 | **Patch-based Unimodal SAR** | BASSNet | 97.92 | 93.49 | 97.73 | 82.98 | 95.71 | 88.13 | 76.30 | 80.46 |
-| | DFFN | 95.73 | 97.36 | 95.81 | 75.04 | 96.54 | 81.99 | 64.21 | 72.57 |
-| | DHCNet | 98.06 | 97.28 | 98.03 | 84.43 | 97.67 | 89.83 | 79.69 | 82.80 |
-| | MDL | 98.21 | 97.94 | 98.19 | 85.27 | 98.07 | 90.55 | 81.14 | 83.86 |
-| | SPRN | 97.79 | 95.14 | 97.68 | 82.63 | 96.46 | 88.17 | 76.37 | 80.47 |
-| | SSFTTNet | 97.24 | 94.11 | 97.11 | 79.86 | 95.68 | 85.86 | 71.79 | 77.40 |
-| | FDGC | 98.25 | 98.01 | 98.24 | 85.51 | 98.13 | 90.74 | 81.50 | 84.13 |
-| | MAVHN | 98.41 | 97.51 | 98.38 | 86.51 | 97.96 | 91.36 | 82.74 | 85.06 |
-| | VIT-DGCN | 98.39 | 96.17 | 98.30 | 86.21 | 97.28 | 90.92 | 81.85 | 84.39 |
-| | KnowCL | 97.82 | 98.07 | 97.83 | 82.74 | 97.95 | 88.72 | 77.48 | 81.24 |
+| | [DFFN](https://ieeexplore.ieee.org/abstract/document/8283837) | 95.73 | 97.36 | 95.81 | 75.04 | 96.54 | 81.99 | 64.21 | 72.57 |
+| | [DHCNet](https://ieeexplore.ieee.org/abstract/document/8361481) | 98.06 | 97.28 | 98.03 | 84.43 | 97.67 | 89.83 | 79.69 | 82.80 |
+| | [MDL](https://ieeexplore.ieee.org/abstract/document/9174822) | 98.21 | 97.94 | 98.19 | 85.27 | 98.07 | 90.55 | 81.14 | 83.86 |
+| | [SPRN](https://ieeexplore.ieee.org/abstract/document/9454961) | 97.79 | 95.14 | 97.68 | 82.63 | 96.46 | 88.17 | 76.37 | 80.47 |
+| | [SSFTTNet](https://ieeexplore.ieee.org/abstract/document/9684381) | 97.24 | 94.11 | 97.11 | 79.86 | 95.68 | 85.86 | 71.79 | 77.40 |
+| | [FDGC](https://ieeexplore.ieee.org/abstract/document/9785802) | 98.25 | 98.01 | 98.24 | 85.51 | 98.13 | 90.74 | 81.50 | 84.13 |
+| | [MAVHN](https://www.sciencedirect.com/science/article/pii/S0957417423015348) | 98.41 | 97.51 | 98.38 | 86.51 | 97.96 | 91.36 | 82.74 | 85.06 |
+| | [VIT-DGCN](https://www.sciencedirect.com/science/article/pii/S1569843224001341) | 98.39 | 96.17 | 98.30 | 86.21 | 97.28 | 90.92 | 81.85 | 84.39 |
+| | [KnowCL](https://arxiv.org/abs/2404.01673) | 97.82 | 98.07 | 97.83 | 82.74 | 97.95 | 88.72 | 77.48 | 81.24 |
 | **Patch-based Multimodal (HSI-SAR)** | MDL-M | 98.31 | 96.97 | 98.24 | 85.77 | 97.64 | 90.73 | 81.47 | 84.10 |
 | | MDL-L | 98.27 | 97.39 | 98.22 | 85.50 | 97.83 | 90.62 | 81.26 | 83.95 |
 | | MDL-ED | 97.98 | 98.49 | 98.00 | 84.09 | 98.23 | 89.77 | 79.58 | 82.71 |
@@ -87,7 +87,7 @@ The following table details the computational cost (FLOPs), exact parameter coun
 
 | Category | Model | Training time (s) | Test time (s) | FLOPs | Parameters |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Patch-based Unimodal HSI** | [SSRN](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Spectral%E2%80%93spatial+residual+network+for+hyperspectral+image+classification&btnG=) | 873.71 | 1706.49 | 185.33M | 354.60K |
+| **Patch-based Unimodal HSI** | [SSRN](https://ieeexplore.ieee.org/abstract/document/8061020) | 873.71 | 1706.49 | 185.33M | 354.60K |
 | | BASSNet | 30.76 | 230.27 | 254.11K | 15.33K |
 | | FDSSC | 9756.06 | 5154.94 | 674.52M | 2.31M |
 | | DFFN | 441.68 | 1465.10 | 481.25M | 431.57K |
