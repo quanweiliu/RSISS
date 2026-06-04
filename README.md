@@ -70,7 +70,7 @@ The following table summarizes the quantitative accuracy metrics (Precision, Rec
 | | [MAVHN](https://www.sciencedirect.com/science/article/pii/S0957417423015348) | 98.41 | 97.51 | 98.38 | 86.51 | 97.96 | 91.36 | 82.74 | 85.06 |
 | | [VIT-DGCN](https://www.sciencedirect.com/science/article/pii/S1569843224001341) | 98.39 | 96.17 | 98.30 | 86.21 | 97.28 | 90.92 | 81.85 | 84.39 |
 | | [KnowCL](https://arxiv.org/abs/2404.01673) | 97.82 | 98.07 | 97.83 | 82.74 | 97.95 | 88.72 | 77.48 | 81.24 |
-| **Patch-based Multimodal (HSI-SAR)** | MDL-M | 98.31 | 96.97 | 98.24 | 85.77 | 97.64 | 90.73 | 81.47 | 84.10 |
+| **Patch-based Multimodal (HSI-SAR)** | MDL-M(https://ieeexplore.ieee.org/abstract/document/9174822) | 98.31 | 96.97 | 98.24 | 85.77 | 97.64 | 90.73 | 81.47 | 84.10 |
 | | [MDL-L](https://ieeexplore.ieee.org/abstract/document/9174822) | 98.27 | 97.39 | 98.22 | 85.50 | 97.83 | 90.62 | 81.26 | 83.95 |
 | | [MDL-ED](https://ieeexplore.ieee.org/abstract/document/9174822) | 97.98 | 98.49 | 98.00 | 84.09 | 98.23 | 89.77 | 79.58 | 82.71 |
 | | [FustNet](https://openaccess.thecvf.com/content_CVPRW_2020/html/w6/Mohla_FusAtNet_Dual_Attention_Based_SpectroSpatial_Multimodal_Fusion_Network_for_Hyperspectral_CVPRW_2020_paper.html) | 97.97 | 97.22 | 97.93 | 83.84 | 97.59 | 89.38 | 78.80 | 82.16 |
@@ -87,7 +87,7 @@ The following table details the computational cost (FLOPs), exact parameter coun
 
 | Category | Model | Training time (s) | Test time (s) | FLOPs | Parameters |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Patch-based Unimodal HSI** | [SSRN](https://ieeexplore.ieee.org/abstract/document/8061020) | 873.71 | 1706.49 | 185.33M | 354.60K |
+| **Patch-based Unimodal HSI** | SSRN | 873.71 | 1706.49 | 185.33M | 354.60K |
 | | BASSNet | 30.76 | 230.27 | 254.11K | 15.33K |
 | | FDSSC | 9756.06 | 5154.94 | 674.52M | 2.31M |
 | | DFFN | 441.68 | 1465.10 | 481.25M | 431.57K |
@@ -135,43 +135,42 @@ The following table summarizes the quantitative accuracy metrics (Precision, Rec
 
 | Category | Model | Water | Oil | Accuracy | Precision | Recall | F1 | Kappa | mIoU |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Tile-based Unimodal HSI** | Unet | 98.52 | 71.68 | 97.05 | 85.10 | 86.02 | 85.55 | 71.10 | 76.99 |
-| | Unet++ | 98.53 | 64.19 | 96.42 | 81.36 | 85.89 | 83.44 | 66.90 | 74.35 |
-| | DeepLabV3 | 97.38 | 63.74 | 95.89 | 80.56 | 75.62 | 77.84 | 55.70 | 68.23 |
-| | DeepLabV3+ | 98.34 | 62.97 | 96.22 | 80.65 | 84.16 | 82.29 | 64.59 | 72.99 |
-| | Linknet | 98.56 | 71.08 | 97.02 | 84.82 | 86.38 | 85.58 | 71.16 | 77.02 |
-| | MANet | 97.68 | 81.75 | 97.08 | 89.72 | 78.71 | 83.21 | 66.47 | 74.23 |
-| | segformer | 98.22 | 69.78 | 96.74 | 84.00 | 83.37 | 83.68 | 67.37 | 74.70 |
-| | unetformer | 98.50 | 66.31 | 96.60 | 82.40 | 85.67 | 83.95 | 67.90 | 74.97 |
-| | A2FPN | 98.33 | 68.71 | 96.72 | 83.52 | 84.33 | 83.92 | 67.84 | 74.97 |
-| | BANet | 98.18 | 65.87 | 96.41 | 82.03 | 82.92 | 82.47 | 64.93 | 73.23 |
-| | DCSwin | 98.47 | 61.99 | 96.18 | 80.23 | 85.31 | 82.54 | 65.10 | 73.26 |
-| | AMSUnet | 98.57 | 67.41 | 96.73 | 82.99 | 86.35 | 84.57 | 69.15 | 75.74 |
-| | ABCNet | 98.29 | 63.38 | 96.24 | 80.84 | 83.78 | 82.23 | 64.47 | 72.93 |
+| **Tile-based Unimodal HSI** | [Unet](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28) | 98.52 | 71.68 | 97.05 | 85.10 | 86.02 | 85.55 | 71.10 | 76.99 |
+| | [Unet++](https://link.springer.com/chapter/10.1007/978-3-030-00889-5_1) | 98.53 | 64.19 | 96.42 | 81.36 | 85.89 | 83.44 | 66.90 | 74.35 |
+| | [DeepLabV3](https://arxiv.org/abs/1412.7062) | 97.38 | 63.74 | 95.89 | 80.56 | 75.62 | 77.84 | 55.70 | 68.23 |
+| | [DeepLabV3+](https://openaccess.thecvf.com/content_ECCV_2018/html/Liang-Chieh_Chen_Encoder-Decoder_with_Atrous_ECCV_2018_paper.html) | 98.34 | 62.97 | 96.22 | 80.65 | 84.16 | 82.29 | 64.59 | 72.99 |
+| | [Linknet](https://ieeexplore.ieee.org/abstract/document/8305148) | 98.56 | 71.08 | 97.02 | 84.82 | 86.38 | 85.58 | 71.16 | 77.02 |
+| | [MANet](https://ieeexplore.ieee.org/abstract/document/9487010) | 97.68 | 81.75 | 97.08 | 89.72 | 78.71 | 83.21 | 66.47 | 74.23 |
+| | [segformer](https://proceedings.neurips.cc/paper/2021/hash/64f1f27bf1b4ec22924fd0acb550c235-Abstract.html) | 98.22 | 69.78 | 96.74 | 84.00 | 83.37 | 83.68 | 67.37 | 74.70 |
+| | [unetformer](https://www.sciencedirect.com/science/article/pii/S0924271622001654) | 98.50 | 66.31 | 96.60 | 82.40 | 85.67 | 83.95 | 67.90 | 74.97 |
+| | [A2FPN](https://www.tandfonline.com/doi/full/10.1080/01431161.2022.2030071) | 98.33 | 68.71 | 96.72 | 83.52 | 84.33 | 83.92 | 67.84 | 74.97 |
+| | [BANet](https://www.mdpi.com/2072-4292/13/16/3065) | 98.18 | 65.87 | 96.41 | 82.03 | 82.92 | 82.47 | 64.93 | 73.23 |
+| | [DCSwin](https://ieeexplore.ieee.org/document/9681903) | 98.47 | 61.99 | 96.18 | 80.23 | 85.31 | 82.54 | 65.10 | 73.26 |
+| | [AMSUnet](https://www.sciencedirect.com/science/article/pii/S0010482523005851) | 98.57 | 67.41 | 96.73 | 82.99 | 86.35 | 84.57 | 69.15 | 75.74 |
+| | [ABCNet](https://www.sciencedirect.com/science/article/pii/S0924271621002379) | 98.29 | 63.38 | 96.24 | 80.84 | 83.78 | 82.23 | 64.47 | 72.93 |
 | | MambaUnet | 98.13 | 69.44 | 96.66 | 83.78 | 82.55 | 83.15 | 66.31 | 74.07 |
-| **Tile-based Unimodal SAR** | Unet | 99.63 | 94.84 | 99.38 | 97.23 | 96.57 | 96.90 | 93.79 | 94.12 |
-| | Unet++ | 99.63 | 94.72 | 99.37 | 97.18 | 96.58 | 96.87 | 93.75 | 94.08 |
-| | DeepLabV3 | 98.99 | 82.55 | 98.12 | 90.77 | 90.56 | 90.67 | 81.33 | 84.00 |
-| | DeepLabV3+ | 99.49 | 89.34 | 98.94 | 94.41 | 95.18 | 94.80 | 89.59 | 90.48 |
-| | Linknet | 99.63 | 94.28 | 99.35 | 96.96 | 96.58 | 96.77 | 93.53 | 93.89 |
-| | MANet | 99.48 | 91.90 | 99.08 | 95.69 | 95.18 | 95.43 | 90.86 | 91.55 |
-| | segformer | 99.49 | 89.35 | 98.94 | 94.42 | 95.14 | 94.77 | 89.55 | 90.44 |
-| | unetformer | 99.56 | 88.30 | 98.94 | 93.93 | 95.79 | 94.84 | 89.68 | 90.55 |
-| | A2FPN | 99.50 | 88.64 | 98.91 | 94.07 | 95.28 | 94.66 | 89.33 | 90.26 |
-| | BANet | 99.60 | 91.27 | 99.15 | 95.44 | 96.20 | 95.82 | 91.63 | 92.21 |
-| | DCSwin | 99.42 | 83.38 | 98.50 | 91.40 | 94.40 | 92.84 | 85.68 | 87.30 |
-| | AMSUnet | 99.67 | 95.02 | 99.43 | 97.35 | 96.94 | 97.14 | 94.28 | 94.56 |
-| | ABCNet | 99.64 | 90.89 | 99.16 | 95.27 | 96.54 | 95.89 | 91.78 | 92.35 |
+| **Tile-based Unimodal SAR** | [Unet](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28) | 99.63 | 94.84 | 99.38 | 97.23 | 96.57 | 96.90 | 93.79 | 94.12 |
+| | [Unet++](https://link.springer.com/chapter/10.1007/978-3-030-00889-5_1) | 99.63 | 94.72 | 99.37 | 97.18 | 96.58 | 96.87 | 93.75 | 94.08 |
+| | [DeepLabV3](https://arxiv.org/abs/1412.7062) | 98.99 | 82.55 | 98.12 | 90.77 | 90.56 | 90.67 | 81.33 | 84.00 |
+| | [DeepLabV3+](https://openaccess.thecvf.com/content_ECCV_2018/html/Liang-Chieh_Chen_Encoder-Decoder_with_Atrous_ECCV_2018_paper.html) | 99.49 | 89.34 | 98.94 | 94.41 | 95.18 | 94.80 | 89.59 | 90.48 |
+| | [Linknet](https://ieeexplore.ieee.org/abstract/document/8305148) | 99.63 | 94.28 | 99.35 | 96.96 | 96.58 | 96.77 | 93.53 | 93.89 |
+| | [MANet](https://ieeexplore.ieee.org/abstract/document/9487010) | 99.48 | 91.90 | 99.08 | 95.69 | 95.18 | 95.43 | 90.86 | 91.55 |
+| | [segformer](https://proceedings.neurips.cc/paper/2021/hash/64f1f27bf1b4ec22924fd0acb550c235-Abstract.html) | 99.49 | 89.35 | 98.94 | 94.42 | 95.14 | 94.77 | 89.55 | 90.44 |
+| | [unetformer](https://www.sciencedirect.com/science/article/pii/S0924271622001654) | 99.56 | 88.30 | 98.94 | 93.93 | 95.79 | 94.84 | 89.68 | 90.55 |
+| | [A2FPN](https://www.tandfonline.com/doi/full/10.1080/01431161.2022.2030071) | 99.50 | 88.64 | 98.91 | 94.07 | 95.28 | 94.66 | 89.33 | 90.26 |
+| | [BANet](https://www.mdpi.com/2072-4292/13/16/3065) | 99.60 | 91.27 | 99.15 | 95.44 | 96.20 | 95.82 | 91.63 | 92.21 |
+| | [DCSwin](https://ieeexplore.ieee.org/document/9681903) | 99.42 | 83.38 | 98.50 | 91.40 | 94.40 | 92.84 | 85.68 | 87.30 |
+| | [AMSUnet](https://www.sciencedirect.com/science/article/pii/S0010482523005851) | 99.67 | 95.02 | 99.43 | 97.35 | 96.94 | 97.14 | 94.28 | 94.56 |
+| | [ABCNet](https://www.sciencedirect.com/science/article/pii/S0924271621002379) | 99.64 | 90.89 | 99.16 | 95.27 | 96.54 | 95.89 | 91.78 | 92.35 |
 | | MambaUnet | 99.53 | 88.70 | 98.93 | 94.11 | 95.47 | 94.78 | 89.55 | 90.45 |
-| **Tile-based Multimodal (HSI-SAR)** | ACNet | 99.77 | 95.34 | 99.53 | 97.80 | 97.55 | 97.67 | 95.35 | 95.54 |
-| | CMGF | 99.76 | 93.64 | 99.44 | 97.67 | 96.70 | 97.18 | 94.36 | 94.63 |
-| | CMANet | 99.79 | 95.33 | 99.55 | 98.00 | 97.56 | 97.78 | 95.55 | 95.73 |
-| | CANet | 99.81 | 93.90 | 99.50 | 98.11 | 96.86 | 97.47 | 94.95 | 95.17 |
-| | SFAFMA | 99.78 | 92.74 | 99.41 | 97.82 | 96.26 | 97.03 | 94.05 | 94.36 |
-| | PCG | 99.74 | 93.86 | 99.43 | 97.51 | 96.80 | 97.15 | 94.31 | 94.59 |
-| | HAFNetE | 99.77 | 93.90 | 99.45 | 97.72 | 96.83 | 97.27 | 94.54 | 94.80 |
-| | AsymFormer | 99.39 | 91.56 | 98.98 | 94.35 | 95.47 | 94.90 | 89.81 | 90.66 |
-| | DE_CCFNet | 99.74 | 95.48 | 99.51 | 97.55 | 97.61 | 97.58 | 95.16 | 95.36 |
+| **Tile-based Multimodal (HSI-SAR)** | [ACNet](https://ieeexplore.ieee.org/abstract/document/8803025) | 99.77 | 95.34 | 99.53 | 97.80 | 97.55 | 97.67 | 95.35 | 95.54 |
+| | [CMGF](https://www.sciencedirect.com/science/article/pii/S0924271621003294 | 99.76 | 93.64 | 99.44 | 97.67 | 96.70 | 97.18 | 94.36 | 94.63 |
+| | [CMANet](https://www.mdpi.com/1424-8220/22/21/8520) | 99.79 | 95.33 | 99.55 | 98.00 | 97.56 | 97.78 | 95.55 | 95.73 |
+| | [CANet](https://www.sciencedirect.com/science/article/pii/S0031320321006440) | 99.81 | 93.90 | 99.50 | 98.11 | 96.86 | 97.47 | 94.95 | 95.17 |
+| | [SFAFMA](https://ieeexplore.ieee.org/abstract/document/10103760) | 99.78 | 92.74 | 99.41 | 97.82 | 96.26 | 97.03 | 94.05 | 94.36 |
+| | [PCG](https://ieeexplore.ieee.org/abstract/document/9859353) | 99.74 | 93.86 | 99.43 | 97.51 | 96.80 | 97.15 | 94.31 | 94.59 |
+| | [AsymFormer](https://openaccess.thecvf.com/content/CVPR2024W/USM/papers/Du_AsymFormer_Asymmetrical_Cross-Modal_Representation_Learning_for_Mobile_Platform_Real-Time_RGB-D_CVPRW_2024_paper.pdf) | 99.39 | 91.56 | 98.98 | 94.35 | 95.47 | 94.90 | 89.81 | 90.66 |
+| | [DE_CCFNet](https://ieeexplore.ieee.org/document/10439005) | 99.74 | 95.48 | 99.51 | 97.55 | 97.61 | 97.58 | 95.16 | 95.36 |
 ---
 
 #### 2. Computational Complexity & Efficiency Benchmarks
@@ -208,15 +207,14 @@ The following table details the computational cost (FLOPs), exact parameter coun
 | | AMSUnet | 2587.56 | 13.90 | 3.07G | 2.62M |
 | | ABCNet | 267.32 | 5.90 | 1.92G | 13.33M |
 | | MambaUnet | 594.64 | 8.97 | 1.50G | 12.89M |
-| **Tile-based Multimodal (HSI-SAR)** | ACNet | 5387.42 | 70.13 | 18.14G | 117.20M |
+| **Tile-based Multimodal (HSI-SAR)** | [ACNet | 5387.42 | 70.13 | 18.14G | 117.20M |
 | | CMGF | 3166.78 | 57.91 | 14.34G | 45.38M |
-| | CMANet | 7820.55 | 68.42 | 14.32G | 117.82M |
-| | CANet | 4947.74 | 64.87 | 18.77G | 127.88M |
-| | SFAFMA | 3408.60 | 24.68 | 14.05G | 87.49M |
-| | PCGF | 3750.01 | 22.75 | 29.04G | 22.36M |
-| | HAFNetE | 4977.47 | 50.62 | 3.80G | 6.98M |
-| | AsymFormer | 3291.95 | 27.43 | 4.43G | 33.32M |
-| | DE_CCFNet | 3205.94 | 27.02 | 8.70G | 54.56M |
+| | CMANet  | 7820.55 | 68.42 | 14.32G | 117.82M |
+| | CANet  | 4947.74 | 64.87 | 18.77G | 127.88M |
+| | SFAFMA  | 3408.60 | 24.68 | 14.05G | 87.49M |
+| | PCGNet  | 3750.01 | 22.75 | 29.04G | 22.36M |
+| | AsymFormer  | 3291.95 | 27.43 | 4.43G | 33.32M |
+| | DE_CCFNet  | 3205.94 | 27.02 | 8.70G | 54.56M |
 ---
 
 
