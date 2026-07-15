@@ -2,11 +2,11 @@
 
 
 
-This repository is our remote sensing image semantic segmentation survey. We split the remote sensing image semantic segmentation into four categories, i.e., pixel-level, patch-level, tile-level, and image-level semantic segmentation. 
+This repository is our remote sensing image semantic segmentation (RRSIS) survey. We split remote sensing image semantic segmentation into four categories: pixel-level, patch-level, tile-level, and image-level. 
 
-Patch-level, and tile-level semantic segmentation methods domian this study area. We collect an array of papers and the corresponding codes here. It's noting that we designed a unified pipeline for these codes, which could help the beginners learning this techniques and  validating new datasets performance.  In addition, we also provide some supplementary materials, like experiments result and extra discussions related to remote sensing image semantic segmentation.
+Patch-level and tile-level semantic segmentation methods dominate this study area. We collect a set of papers and their corresponding code here. It's worth noting that we designed a unified pipeline for these codes, which could help beginners learn these techniques and validate the performance of new datasets.  In addition, we provide supplementary materials, such as experimental results and additional discussions related to remote sensing image semantic segmentation.
 
-We hople this reposity has a little promotes to the remote sensing communities prosperous.
+We hope this repository will contribute to the prosperity of the remote sensing community.
 
 ![Framework Image](framework.png)
 
@@ -25,17 +25,17 @@ The dataset contains 18 paired multimodal scenes with an average image dimension
 
 Ground truth reference maps were manually annotated using ENVI software following established rigorous annotation guidelines.
 
-#### 1.Training and Evaluation Protocols
+#### 1. Training and Evaluation Protocols
 
-To support both patch based and tile based experimental evaluations, the data were preprocessed using distinct strategies tailored to the operational requirements of each segmentation paradigm.
+To support both patch-based and tile-based experimental evaluations, the data were preprocessed using distinct strategies tailored to the operational requirements of each segmentation paradigm.
 
-#### 2.Protocols for Models at the Patch Level
-For patch based approaches, images were extracted pixel by pixel following prior studies. To rigorously address class imbalance during model optimization, 1000 random samples were selected from each minority class in area 1, while 2000 samples were explicitly allocated for the majority water class.
+#### 2. Protocols for Models at the Patch Level
+For patch-based approaches, images were extracted pixel by pixel following prior studies. To rigorously address class imbalance during model optimization, 1000 random samples were selected from each minority class in area 1, while 2000 samples were explicitly allocated for the majority water class.
 
-#### 3.Protocols for Models at the Tile Level
-For tile based architectures, the paired scene data were systematically cropped into fixed size tiles of 128 by 128 pixels utilizing a sliding window stride of 64 pixels. The entire MOSD dataset was then split into training, validation, and test sets following a three to one to two ratio. This exact partitioning yielded 1981 training subimages, 647 validation subimages, and 1201 test subimages. For this paradigm, the full partitioned dataset was utilized for training and testing without any further sampling.
+#### 3. Protocols for Models at the Tile Level
+For tile-based architectures, the paired scene data were systematically cropped into fixed-size tiles of 128 by 128 pixels utilising a sliding window stride of 64 pixels. The entire MOSD dataset was then split into training, validation, and test sets following a three to one to two ratio. This exact partitioning yielded 1981 training subimages, 647 validation subimages, and 1201 test subimages. For this paradigm, the full partitioned dataset was utilized for training and testing without any further sampling.
 
-#### 4.Hardware Environment
+#### 4. Hardware Environment
 All representative models were implemented, trained, and tested under a unified computing environment to eliminate systemic hardware variations. The experiments were accelerated using an NVIDIA GeForce RTX 3090 graphics processing unit with 24 gigabytes of video memory, deployed on the PyTorch deep learning framework.
 
 
