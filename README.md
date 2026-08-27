@@ -284,6 +284,10 @@ We have included a dataset table for easy updating and reference.
 | DFC 2018 | HSI | 1 × 601 × 2384 × 48 | 1 | 20 | 1.43 | 2.02M | Classification | 2017 |
 |  | LiDAR | 1 × 1202 × 4768 × 3 | 0.5 | 20 | 1.43 | 2.02M | Classification | 2017 |
 |  | RGB | 1 × 1202 × 4768 × 3 | 0.5 | 20 | 1.43 | 2.02M | Classification | 2017 |
+| MSAW | MSI | 3401 × 900 × 900 × 4 | 0.5 | 1 | 120 | - | BuildingSeg | 2017 |
+|  | RGB | 3401 × 900 × 900 × 3 | 0.5 | 1 | 120 | - | BuildingSeg | 2017 |
+|  | PAN | 3401 × 900 × 900 × 1 | 0.5 | 1 | 120 | - | BuildingSeg | 2017 |
+|  | SAR | 3401 × 900 × 900 × 4 | 0.5 | 1 | 120 | - | BuildingSeg | 2017 |
 | Augsburg | HSI | 1 × 332 × 485 × 180 | 30 | 7 | 144.92 | 78,293 | Classification | 2021 |
 |  | SAR | 1 × 332 × 485 × 4 | 30 | 7 | 144.92 | 78,293 | Classification | 2021 |
 |  | LiDAR | 1 × 332 × 485 × 1 | 30 | 7 | 144.92 | 78,293 | Classification | 2021 |
@@ -313,7 +317,7 @@ We have included a dataset table for easy updating and reference.
 |  | HSI | 1 × 4040 × 2444 × 112 | 0.1 | 21 | 0.1 | 696,620 | Classification | 2025 |
 |  | LiDAR | 1 × 4040 × 2444 × 1 | 0.1 | 21 | 0.1 | 696,620 | Classification | 2025 |
 | DDHRNet     | RGB | 7831 × 256 × 256 × 3 | 3.2 | 5 | - | - | ReasoningSeg | 2025 |
-|             | SAR | 7831 × 256 × 256 × 3 | 5 | 5 | - | - | ReasoningSeg | 2025 |
+|             | SAR | 7831 × 256 × 256 × 1 | 5 | 5 | - | - | ReasoningSeg | 2025 |
 | RefSegRS | Text | 4420 | 0.13 | 14 | 19.58 | - | ReferringSeg | 2024 |
 |  | RGB | 4420 × 512 × 512 × 3 | 0.13 | 14 | 19.58 | - | ReferringSeg | 2024 |
 | RRSIS-D | Text | 17402 | 0.5-30 | 20 | - | - | ReferringSeg | 2024 |
