@@ -268,56 +268,60 @@ We have included a dataset table for easy updating and reference.
 | Datasets | Type | Image size | GSD(m) | Classes | Area (km²) | Labels | Task | Year |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Trento | HSI | 1 × 166 × 600 × 63 | 1 | 6 | 0.1 | 30,414 | Classification | 2007 |
-| Trento | LiDAR | 1 × 166 × 600 × 2 | 1 | 6 | 0.1 | 30,414 | Classification | 2007 |
+|  | LiDAR | 1 × 166 × 600 × 2 | 1 | 6 | 0.1 | 30,414 | Classification | 2007 |
 | Berlin | HSI | 1 × 1723 × 476 × 224 | 30 | 8 | 738.13 | 464,671 | Classification | 2009 |
-| Berlin | SAR | 1 × 1723 × 476 × 4 | 30 | 8 | 738.13 | 464,671 | Classification | 2009 |
+|  | SAR | 1 × 1723 × 476 × 4 | 30 | 8 | 738.13 | 464,671 | Classification | 2009 |
 | MUUFL Gulfport | HSI | 1 × 325 × 220 × 64(72) | 1 | 11 | 0.07 | 53,687 | Classification | 2010 |
-| MUUFL Gulfport | LiDAR | 1 × 325 × 220 × 2 | 1 | 11 | 0.07 | 53,687 | Classification | 2010 |
+|  Gulfport | LiDAR | 1 × 325 × 220 × 2 | 1 | 11 | 0.07 | 53,687 | Classification | 2010 |
 | DFC 2013 | HSI | 1 × 1095 × 349 × 144 | 2.5 | 15 | 2.39 | 15,029 | Classification | 2012 |
-| DFC 2013 | LiDAR | 1 × 1095 × 349 × 1 | 2.5 | 15 | 2.39 | 15,029 | Classification | 2012 |
+| | LiDAR | 1 × 1095 × 349 × 1 | 2.5 | 15 | 2.39 | 15,029 | Classification | 2012 |
 | ISPRS Vaihingen | RGB | 33 × Variable × 3 | 0.09 | 6 | 1.34 | 168M | SemanticSeg | 2013 |
-| ISPRS Vaihingen | LiDAR | 33 × Variable × 1 | 0.09 | 6 | 1.34 | 168M | SemanticSeg | 2013 |
-| ISPRS Vaihingen | DSM | 33 × Variable × 1 | 0.09 | 6 | 1.34 | 168M | SemanticSeg | 2013 |
+|  | LiDAR | 33 × Variable × 1 | 0.09 | 6 | 1.34 | 168M | SemanticSeg | 2013 |
+|  | DSM | 33 × Variable × 1 | 0.09 | 6 | 1.34 | 168M | SemanticSeg | 2013 |
 | ISPRS Potsdam | MSI | 38 × 6000 × 6000 × 4 | 0.05 | 6 | 3.42 | 1.37B | SemanticSeg | 2013 |
-| ISPRS Potsdam | LiDAR | 38 × 6000 × 6000 × 1 | 0.05 | 6 | 3.42 | 1.37B | SemanticSeg | 2013 |
-| ISPRS Potsdam | DSM | 38 × 6000 × 6000 × 1 | 0.05 | 6 | 3.42 | 1.37B | SemanticSeg | 2013 |
+|  | LiDAR | 38 × 6000 × 6000 × 1 | 0.05 | 6 | 3.42 | 1.37B | SemanticSeg | 2013 |
+|  | DSM | 38 × 6000 × 6000 × 1 | 0.05 | 6 | 3.42 | 1.37B | SemanticSeg | 2013 |
 | DFC 2018 | HSI | 1 × 601 × 2384 × 48 | 1 | 20 | 1.43 | 2.02M | Classification | 2017 |
-| DFC 2018 | LiDAR | 1 × 1202 × 4768 × 3 | 0.5 | 20 | 1.43 | 2.02M | Classification | 2017 |
-| DFC 2018 | RGB | 1 × 1202 × 4768 × 3 | 0.5 | 20 | 1.43 | 2.02M | Classification | 2017 |
+|  | LiDAR | 1 × 1202 × 4768 × 3 | 0.5 | 20 | 1.43 | 2.02M | Classification | 2017 |
+|  | RGB | 1 × 1202 × 4768 × 3 | 0.5 | 20 | 1.43 | 2.02M | Classification | 2017 |
 | Augsburg | HSI | 1 × 332 × 485 × 180 | 30 | 7 | 144.92 | 78,293 | Classification | 2021 |
-| Augsburg | SAR | 1 × 332 × 485 × 4 | 30 | 7 | 144.92 | 78,293 | Classification | 2021 |
-| Augsburg | LiDAR | 1 × 332 × 485 × 1 | 30 | 7 | 144.92 | 78,293 | Classification | 2021 |
+|  | SAR | 1 × 332 × 485 × 4 | 30 | 7 | 144.92 | 78,293 | Classification | 2021 |
+|  | LiDAR | 1 × 332 × 485 × 1 | 30 | 7 | 144.92 | 78,293 | Classification | 2021 |
 | LCZ | MSI | 1 × 626 × 643 × 10 | 100 | 10 | 4025.18 | 30,087 | Classification | 2021 |
-| LCZ | SAR | 1 × 626 × 643 × 4 | 100 | 10 | 4025.18 | 30,087 | Classification | 2021 |
+|  | SAR | 1 × 626 × 643 × 4 | 100 | 10 | 4025.18 | 30,087 | Classification | 2021 |
+| WHU-OPT-SAR | RGB | 100 × 5556 × 3704 × 3  | 2 | 6 | 5000 | - | SemanticSeg | 2022 |
+|             | SAR | 100 × 5556 × 3704 × 1  | 5 | 6 | 5000 | - | SemanticSeg | 2022 |
 | C2Seg-AB | HSI | 1 × 2465 × 811 × 242<br>1 × 886 × 1360 × 242 | 10 | 13 | 20<br>12.05 | 2M<br>1.21M | SemanticSeg | 2023 |
-| C2Seg-AB | MSI | 1 × 2465 × 811 × 4<br>1 × 886 × 1360 × 4 | 10 | 13 | 20<br>12.05 | 2M<br>1.21M | SemanticSeg | 2023 |
-| C2Seg-AB | SAR | 1 × 2465 × 811 × 2<br>1 × 886 × 1360 × 2 | 10 | 13 | 20<br>12.05 | 2M<br>1.21M | SemanticSeg | 2023 |
+|  | MSI | 1 × 2465 × 811 × 4<br>1 × 886 × 1360 × 4 | 10 | 13 | 20<br>12.05 | 2M<br>1.21M | SemanticSeg | 2023 |
+|  | SAR | 1 × 2465 × 811 × 2<br>1 × 886 × 1360 × 2 | 10 | 13 | 20<br>12.05 | 2M<br>1.21M | SemanticSeg | 2023 |
 | C2Seg-BW | HSI | 1 × 13474 × 8706 × 116(330)<br>1 × 6225 × 8670 × 116(330) | 10 | 13 | 1173.05<br>539.71 | 117.31M<br>5397M | SemanticSeg | 2023 |
-| C2Seg-BW | MSI | 1 × 13474 × 8706 × 4<br>1 × 6225 × 8670 × 4 | 10 | 13 | 1173.05<br>539.71 | 117.31M<br>5397M | SemanticSeg | 2023 |
-| C2Seg-BW | SAR | 1 × 13474 × 8706 × 2<br>1 × 6225 × 8670 × 2 | 10 | 13 | 1173.05<br>539.71 | 117.31M<br>5397M | SemanticSeg | 2023 |
+|  | MSI | 1 × 13474 × 8706 × 4<br>1 × 6225 × 8670 × 4 | 10 | 13 | 1173.05<br>539.71 | 117.31M<br>5397M | SemanticSeg | 2023 |
+|  | SAR | 1 × 13474 × 8706 × 2<br>1 × 6225 × 8670 × 2 | 10 | 13 | 1173.05<br>539.71 | 117.31M<br>5397M | SemanticSeg | 2023 |
 | MDAS | SAR | 1 × 888 × 1371 × 2 | 10 | 16 | 121.75 | - | SemanticSeg | 2023 |
-| MDAS | Lidar | 1 × 29600 × 45700 × 1 | 0.25 | 16 | 121.75 | - | SemanticSeg | 2023 |
-| MDAS | MSI | 1 × 888 × 1371 × 12 | 10 | 16 | 121.75 | - | SemanticSeg | 2023 |
-| MDAS | HSI | 1 × 4036 × 6232 × 368 | 2.2 | 16 | 121.75 | - | SemanticSeg | 2023 |
+|  | Lidar | 1 × 29600 × 45700 × 1 | 0.25 | 16 | 121.75 | - | SemanticSeg | 2023 |
+|  | MSI | 1 × 888 × 1371 × 12 | 10 | 16 | 121.75 | - | SemanticSeg | 2023 |
+|  | HSI | 1 × 4036 × 6232 × 368 | 2.2 | 16 | 121.75 | - | SemanticSeg | 2023 |
 | Ticino | RGB | 1502 × 256 × 362 × 3 | 1.86-2.64 | 8/10 | 1331.72 | - | SemanticSeg | 2024 |
-| Ticino | PAN | 1502 × 96 × 192 × 1 | 5 | 8/10 | 1331.72 | - | SemanticSeg | 2024 |
-| Ticino | HSI VNIR | 1502 × 96 × 192 × 60(63) | 5 | 8/10 | 1331.72 | - | SemanticSeg | 2024 |
-| Ticino | HSI SWIR | 1502 × 96 × 192 × 122(171) | 5 | 8/10 | 1331.72 | - | SemanticSeg | 2024 |
-| Ticino | DTM | 1502 × 101 × 203 × 1 | 5 | 8/10 | 1331.72 | - | SemanticSeg | 2024 |
+|  | PAN | 1502 × 96 × 192 × 1 | 5 | 8/10 | 1331.72 | - | SemanticSeg | 2024 |
+|  | HSI VNIR | 1502 × 96 × 192 × 60(63) | 5 | 8/10 | 1331.72 | - | SemanticSeg | 2024 |
+|  | HSI SWIR | 1502 × 96 × 192 × 122(171) | 5 | 8/10 | 1331.72 | - | SemanticSeg | 2024 |
+|  | DTM | 1502 × 101 × 203 × 1 | 5 | 8/10 | 1331.72 | - | SemanticSeg | 2024 |
 | SZUTreeData-R1 | RGB | 1 × 6170 × 4810 × 3 | 0.05 | 20 | 0.07 | 492,631 | Classification | 2025 |
-| SZUTreeData-R1 | HSI | 1 × 3085 × 2405 × 112 | 0.1 | 20 | 0.07 | 492,631 | Classification | 2025 |
+|  | HSI | 1 × 3085 × 2405 × 112 | 0.1 | 20 | 0.07 | 492,631 | Classification | 2025 |
 | SZUTreeData-R1 | LiDAR | 1 × 3085 × 2405 × 1 | 0.1 | 20 | 0.07 | 492,631 | Classification | 2025 |
-| SZUTreeData-R2 | RGB | 1 × 8080 × 4888 × 3 | 0.05 | 21 | 0.1 | 696,620 | Classification | 2025 |
-| SZUTreeData-R2 | HSI | 1 × 4040 × 2444 × 112 | 0.1 | 21 | 0.1 | 696,620 | Classification | 2025 |
-| SZUTreeData-R2 | LiDAR | 1 × 4040 × 2444 × 1 | 0.1 | 21 | 0.1 | 696,620 | Classification | 2025 |
+|  | RGB | 1 × 8080 × 4888 × 3 | 0.05 | 21 | 0.1 | 696,620 | Classification | 2025 |
+|  | HSI | 1 × 4040 × 2444 × 112 | 0.1 | 21 | 0.1 | 696,620 | Classification | 2025 |
+|  | LiDAR | 1 × 4040 × 2444 × 1 | 0.1 | 21 | 0.1 | 696,620 | Classification | 2025 |
+| DDHRNet     | RGB | 7831 × 256 × 256 × 3 | 3.2 | 5 | - | - | ReasoningSeg | 2025 |
+|             | SAR | 7831 × 256 × 256 × 3 | 5 | 5 | - | - | ReasoningSeg | 2025 |
 | RefSegRS | Text | 4420 | 0.13 | 14 | 19.58 | - | ReferringSeg | 2024 |
-| RefSegRS | RGB | 4420 × 512 × 512 × 3 | 0.13 | 14 | 19.58 | - | ReferringSeg | 2024 |
+|  | RGB | 4420 × 512 × 512 × 3 | 0.13 | 14 | 19.58 | - | ReferringSeg | 2024 |
 | RRSIS-D | Text | 17402 | 0.5-30 | 20 | - | - | ReferringSeg | 2024 |
-| RRSIS-D | RGB | 17402 × 800 × 800 × 3 | 0.5-30 | 20 | - | - | ReferringSeg | 2024 |
+|  | RGB | 17402 × 800 × 800 × 3 | 0.5-30 | 20 | - | - | ReferringSeg | 2024 |
 | RISBench | Text | 52472 | 0.1-30 | 26 | - | - | ReferringSeg | 2025 |
-| RISBench | RGB | 52472 × 512 × 512 × 3 | 0.1-30 | 26 | - | - | ReferringSeg | 2025 |
+|  | RGB | 52472 × 512 × 512 × 3 | 0.1-30 | 26 | - | - | ReferringSeg | 2025 |
 | EarthReason | Text | 5434 | 0.5-153 | 28 | - | - | ReasoningSeg | 2025 |
-| EarthReason | RGB | 5434 × Variable × 3 | 0.5-153 | 28 | - | - | ReasoningSeg | 2025 |
+|  | RGB | 5434 × Variable × 3 | 0.5-153 | 28 | - | - | ReasoningSeg | 2025 |
 
 ### Future direction 
 We summarized some poential and promsing directions for future study.
