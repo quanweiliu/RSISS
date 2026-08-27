@@ -308,8 +308,8 @@ We have included a dataset table for easy updating and reference.
 |  | DTM | 1502 × 101 × 203 × 1 | 5 | 8/10 | 1331.72 | - | SemanticSeg | 2024 |
 | SZUTreeData-R1 | RGB | 1 × 6170 × 4810 × 3 | 0.05 | 20 | 0.07 | 492,631 | Classification | 2025 |
 |  | HSI | 1 × 3085 × 2405 × 112 | 0.1 | 20 | 0.07 | 492,631 | Classification | 2025 |
-| SZUTreeData-R1 | LiDAR | 1 × 3085 × 2405 × 1 | 0.1 | 20 | 0.07 | 492,631 | Classification | 2025 |
-|  | RGB | 1 × 8080 × 4888 × 3 | 0.05 | 21 | 0.1 | 696,620 | Classification | 2025 |
+|  | LiDAR | 1 × 3085 × 2405 × 1 | 0.1 | 20 | 0.07 | 492,631 | Classification | 2025 |
+| SZUTreeData-R2 | RGB | 1 × 8080 × 4888 × 3 | 0.05 | 21 | 0.1 | 696,620 | Classification | 2025 |
 |  | HSI | 1 × 4040 × 2444 × 112 | 0.1 | 21 | 0.1 | 696,620 | Classification | 2025 |
 |  | LiDAR | 1 × 4040 × 2444 × 1 | 0.1 | 21 | 0.1 | 696,620 | Classification | 2025 |
 | DDHRNet     | RGB | 7831 × 256 × 256 × 3 | 3.2 | 5 | - | - | ReasoningSeg | 2025 |
